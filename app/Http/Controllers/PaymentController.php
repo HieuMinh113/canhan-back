@@ -50,7 +50,7 @@ class PaymentController extends Controller
         $amount    = $request->input('amount', 10000); 
         $orderId   = time() . "";
         $redirectUrl = "http://localhost:8080/cart"; 
-        $ipnUrl      = "http://localhost:8000/momo-callback"; 
+        $ipnUrl      = "/momo-callback"; 
         $extraData   = "";
 
         $requestId   = time() . "";
